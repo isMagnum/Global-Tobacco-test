@@ -659,14 +659,24 @@ body {
   font-size: 30px;
   line-height: 36px;
 }
+.call-back-form__label {
+  position: relative;
+  z-index: 5;
+}
 .call-back-form__input {
+  position: relative;
+  z-index: 10;
   width: 330px;
   margin-bottom: 40px;
   margin-top: -28px;
+  transition: 0.3s;
 }
 .call-back-form__input--textarea {
   resize: none;
   width: 100%;
+}
+.call-back-form__input--focus {
+  margin-top: 0;
 }
 .call-back-form__btn {
   width: 330px;
