@@ -1,0 +1,57 @@
+.index-page {
+  
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  &__section {
+    position: relative;
+  }
+  
+  &__section-anchor {
+    /*Скрытый якорь секции*/
+    position: absolute;
+    top: 0;
+  }
+  
+  &__section-scrole-link {
+    display: inline-block;
+    position: absolute;
+    bottom: 80px;
+    bottom: 4vh;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    padding-bottom: 4vh;
+    
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 16px;
+    color: @c-light-transparent-80;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 1vh;
+      width: 20px;
+      height: 15px;
+      margin-left: -10px;
+      background: url(../img/sprite.png) -1px -37px no-repeat;
+      animation: a-section-scrole-link 0.8s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    
+    &:hover {
+      color: @c-main;
+    }
+  }
+}
