@@ -1,13 +1,22 @@
-$("#main").onepage_scroll({
-       sectionContainer: ".scroll-section",
-       easing: "ease",
-       animationTime: 800,
-       pagination: false,
-       updateURL: false,
-       beforeMove: function(index) {},
-       afterMove: function(index) {},
-       loop: false,
-       keyboard: true,
-       responsiveFallback: false,
-       direction: "vertical"
-    });
+$(function() {
+  $.scrollify({
+    section : ".scroll-section",
+    sectionName : "section-name",
+    interstitialSection : "",
+    easing: "easeOutExpo",
+    scrollSpeed: 900,
+    offset : 0,
+    scrollbars: false,
+    standardScrollElements: "",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll:true,
+  });
+  
+  $(".scroll").click(function(e) {
+    e.preventDefault();
+    $.scrollify.next();
+  });
+});
+
