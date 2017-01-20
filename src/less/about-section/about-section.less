@@ -1,0 +1,32 @@
+.about-section {
+  background: url(../img/bg-about.jpg);
+  background-position: center;
+  background-size: cover;
+  align-items: flex-start;
+  
+  &__content {
+    position: relative;
+    margin-left: 12.11%;
+    width: 610px;
+  }
+  
+  &__title {
+    margin-bottom: 55px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  
+  &__p {
+    position: relative;
+    margin-bottom: 26px;
+    
+    &:last-child {
+      margin-bottom: 0;
+      
+      /* Затемнение текста градиентом */
+      background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.6)); 
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+}
