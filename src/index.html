@@ -20,13 +20,14 @@
     </div>
   <![endif]-->
   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
 </head>
 <body>
   <header class="page-header  g-page-wraper">
     <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo Global Tobacco" class="logo__img"></a>
   </header>
-  <main class="index-page">
-    <section class="index-page__section  home-section  g-page-wraper">
+  <main class="index-page" id="main">
+    <section class="index-page__section  home-section  g-page-wraper  scroll-section">
       <div class="left-side-section-decor-line">
         <div class="left-side-section-decor-line__item  left-side-section-decor-line__item--accent"></div>
         <div class="left-side-section-decor-line__item"></div>
@@ -54,7 +55,7 @@
       <p class="home-section__phone">+380 99 456-05-06</p>
       <a href="#about" class="index-page__section-scrole-link">Більше про нас</a>
     </section>
-    <section class="index-page__section  about-section  g-page-wraper">
+    <section class="index-page__section  about-section  g-page-wraper  scroll-section">
       <a href="" name="about" class="index-page__section-anchor"></a>
       <div class="left-side-section-decor-line">
         <div class="left-side-section-decor-line__item"></div>
@@ -69,7 +70,7 @@
       </article>
       <a href="#contacts" class="index-page__section-scrole-link">наші контакти</a>
     </section>
-    <section class="index-page__section  contacts-section">
+    <section class="index-page__section  contacts-section  scroll-section">
       <a href="" name="contacts" class="index-page__section-anchor"></a>
       <div class="left-side-section-decor-line">
         <div class="left-side-section-decor-line__item"></div>
@@ -97,5 +98,8 @@
       <div class="contacts-section__map"></div>
     </section>
   </main>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>
+  <script type="text/javascript" src="js/my-onepage-scroll.js"></script>
 </body>
 </html>
