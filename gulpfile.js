@@ -95,6 +95,7 @@ gulp.task('compile', function() {
   .pipe(gulp.dest('src/css'));
 });
 
-gulp.watch('src/less/**/*.less', function(e) {
-  gulp.run('compile');
+gulp.task('watch', function() {
+  gulp.watch('src/less/**/*.less', ['compile']);
 });
+
