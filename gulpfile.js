@@ -64,9 +64,14 @@ gulp.task('build', function() {
   
   .pipe(gulp.dest('build'));
   
+  //js
   gulp.src('src/js/*.js')
-        .pipe(jsmin())
-        .pipe(gulp.dest('build/js'));
+  .pipe(jsmin())
+  .pipe(gulp.dest('build/js'));
+  
+  //fonts
+  gulp.src('src/fonts/*.js')
+  .pipe(gulp.dest('build/fonts'));
 });
 
 
